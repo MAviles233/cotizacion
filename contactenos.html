@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CompuNova</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles_contactenos.css">
+    <script defer src="form-validation.js"></script>
+</head>
+
+<body>
+    <div class="contenedor">
+        <header>
+            <h1>Contactenos</h1>
+
+            <nav class="menu">
+                <a href="Inicio_Brilesa.html">Inicio</a>
+            </nav>
+        </header>
+
+        <main>
+            <div class="contenedor-img">
+                <a><img src="logoCom.jpg" alt=""></a>
+            </div>
+            <div class="contenedor-texto">
+
+                <h1>CONTACTENOS</h1>
+                <h2 class="titulo">
+                    <span class="typed"></span>
+                </h2>
+
+                <div class="titulo" id="cadenas-texto">
+                    <p>Telefono: <i class="compu">+593 98 024 5452</i></p>
+                    <p>Correo Electronico: <i class="compu">BrilesaInmobiliaria@gmail.com</i></p>
+                    <p>Dirección: <i class="compu">Avenida 9 de Octubre y Pedro Carbo</i></p>
+                </div>
+                <p>Encuentranos en nuestra redes sociales:</p>
+                <div class="links">
+                    <a href="https://www.facebook.com"><img src="facebook.png" alt="facebook"></a>
+                    <a href="https://www.instagram.com"><img src="instagram.png" alt="instagram"></a>
+                    <a href="https://www.linkedin.com"><img src="linkedin.png" alt="linkedin"></a>
+                    <a href="https://www.twitter.com"><img src="x.png" alt="Twittter"></a>
+                </div>
+                <a href="cotizador.php" class="btn-link activo">Cotiza Tu Casa Propia</a>
+            </div>
+        </main>
+    </div>
+
+    <div class="contenedor-2">
+        <form name="contactForm" onsubmit="return validateForm()" method="post">
+            <h2>Dejanos Tus Consultas, Sugerencias Y Comentarios</h2>
+            <div class="input-box">
+                <input type="text" name="name" required placeholder="Nombre y Apellido">
+            </div>
+            <div class="input-box">
+                <input type="text" name="cedula" required maxlength="10" placeholder="Cédula de Identidad">
+            </div>
+            <div class="input-box">
+                <input type="email" name="email" required placeholder="Correo Electrónico">
+            </div>
+            <div class="input-box">
+                <input type="text" name="asunto" required placeholder="Asunto">
+            </div>
+            <div class="input-box">
+                <textarea name="mensaje" cols="30" rows="10" required placeholder="Escribe tu mensaje"></textarea>
+            </div>
+            <button type="submit" class="btn-link">Enviar Mensaje</button>
+        </form>
+    </div>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <footer>
+
+        <nav>
+            
+            <a href="contactenos.html">Contactenos</a>
+        </nav>
+        <div class="data">
+            <p><i></i>+593 98 024 5452</p>
+            <p><i></i>BrilesaInmobiliaria@gmail.com</p>
+            <p><i></i>Avenida 9 de octubre y Pedro Carbo</p>
+        </div>
+    </footer>
+</body>
+
+</html>
